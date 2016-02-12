@@ -43,19 +43,31 @@ process.stdin.on('keypress', function (ch, key) {
 
   if (key.name == 'w'){
   	console.log("moved up");
-  	up(10);
+  	up(5);
   } else if (key.name == 's'){
   	console.log("moved down");
-  	down(10);
+  	down(5);
   } else if (key.name == 'd'){
   	console.log("moved right");
-  	turnRightDegrees(10);
+  	turnRightDegrees(5);
   } else if (key.name == 'a'){
   	console.log("moved left");
-  	turnLeftDegrees(10);
+  	turnLeftDegrees(5);
   } else if (key.name == 'space'){
   	console.log("fired");
   	fire();
+  } else if (key.name == 'up'){
+    console.log("moved up");
+    up(30);
+  } else if (key.name == 'down'){
+    console.log("moved down");
+    down(30);
+  } else if (key.name == 'left'){
+    console.log("moved left");
+    turnLeftDegrees(30);
+   } else if (key.name == 'right'){
+    console.log("moved right");
+    turnRightDegrees(30);
   }
 
 
